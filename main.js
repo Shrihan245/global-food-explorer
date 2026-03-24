@@ -1,9 +1,9 @@
 console.log('main.js loaded');
 
 Promise.all([
-  d3.json('data/processed/cuisine_counts.json'),
-  d3.json('data/processed/top_ingredients.json'),
-  d3.json('data/processed/shared_ingredients.json')
+  d3.json('../data/processed/cuisine_counts.json'),
+  d3.json('../data/processed/top_ingredients.json'),
+  d3.json('../data/processed/shared_ingredients.json')
 ]).then(([cuisineCounts, topIngredients, sharedIngredients]) => {
 
   // TOOLTIP
