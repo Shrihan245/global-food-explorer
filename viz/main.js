@@ -16,10 +16,10 @@ function fetchCuisineImage(cuisine) {
 }
 
 Promise.all([
-  d3.json('data/processed/cuisine_counts.json'),
-  d3.json('data/processed/top_ingredients.json'),
-  d3.json('data/processed/shared_ingredients.json')
-]).then(([cuisineCounts, topIngredients, sharedIngredients]) => {
+  d3.json('/global-food-explorer/data/processed/cuisine_counts.json'),
+  d3.json('/global-food-explorer/data/processed/top_ingredients.json'),
+  d3.json('/global-food-explorer/data/processed/shared_ingredients.json')
+])
 
   // TOOLTIP
   const tooltip = document.getElementById('tooltip');
