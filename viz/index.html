@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A World on a Plate</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Scrollama -->
+  <script src="https://unpkg.com/scrollama"></script>
+</head>
+<body>
+
+  <!-- SECTION 1: Hero -->
+  <section id="hero">
+    <h1>A World on a Plate</h1>
+    <p>A data story exploring global cuisines and the ingredients that define them</p>
+    <div class="scroll-hint">↓ Scroll to explore</div>
+  </section>
+
+  <!-- SECTION 2: Cuisine Counts -->
+  <section id="cuisine-counts" class="scroll-section">
+    <div class="sticky-container">
+      <h2>The World's Most Represented Cuisines</h2>
+      <div id="bar-chart"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Top Ingredients -->
+  <section id="ingredients" class="scroll-section">
+    <div class="sticky-container">
+      <h2>What Defines Each Cuisine?</h2>
+      <p class="subtitle">Click a cuisine to explore its top ingredients</p>
+      <div id="cuisine-selector"></div>
+      <div id="ingredient-chart"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Shared Ingredients -->
+  <section id="shared" class="scroll-section">
+    <div class="sticky-container">
+      <h2>What Connects Us</h2>
+      <p class="subtitle">Ingredients shared across the most cuisines</p>
+      <div id="shared-chart"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Outro -->
+  <section id="outro">
+    <h2>Food is a universal language</h2>
+    <p>Across 20 cuisines and thousands of recipes, the same ingredients appear again and again — connecting cultures across the globe.</p>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
