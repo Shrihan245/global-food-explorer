@@ -102,4 +102,4 @@ Open `http://localhost:8000` in your browser.
 
 Shrihan Bodapati — Built as a portfolio project to learn D3.js and data visualization through the lens of global food culture.
 
-[GitHub](https://github.com/Shrihan245) · LinkedIn
+[GitHub](https://github.com/Shrihan245) · [LinkedIn](https://www.linkedin.com/in/shrihan-bodapati)
