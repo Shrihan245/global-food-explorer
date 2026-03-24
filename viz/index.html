@@ -5,33 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A World on a Plate</title>
   <link rel="stylesheet" href="style.css">
-  <!-- D3 -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <!-- Scrollama -->
   <script src="https://unpkg.com/scrollama"></script>
 </head>
 <body>
-  <div id="tooltip" style="
-  position: fixed;
-  background: #1a1a1a;
-  border: 1px solid #f4a261;
-  color: #f5f5f5;
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  pointer-events: none;
-  display: none;
-  z-index: 9999;
-"></div>
 
-  <!-- SECTION 1: Hero -->
+  <div id="tooltip" style="
+    position: fixed;
+    background: #1a1a1a;
+    border: 1px solid #f4a261;
+    color: #f5f5f5;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    pointer-events: none;
+    display: none;
+    z-index: 9999;
+  "></div>
+
   <section id="hero">
     <h1>A World on a Plate</h1>
     <p>A data story exploring global cuisines and the ingredients that define them</p>
     <div class="scroll-hint">↓ Scroll to explore</div>
   </section>
 
-  <!-- SECTION 2: Cuisine Counts -->
   <section id="cuisine-counts" class="scroll-section">
     <div class="sticky-container">
       <h2>The World's Most Represented Cuisines</h2>
@@ -39,17 +36,24 @@
     </div>
   </section>
 
-  <!-- SECTION 3: Top Ingredients -->
   <section id="ingredients" class="scroll-section">
     <div class="sticky-container">
       <h2>What Defines Each Cuisine?</h2>
       <p class="subtitle">Click a cuisine to explore its top ingredients</p>
       <div id="cuisine-selector"></div>
+      <img id="cuisine-image" style="
+        width: 100%;
+        max-width: 600px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin: 1rem auto;
+        display: none;
+      " />
       <div id="ingredient-chart"></div>
     </div>
   </section>
 
-  <!-- SECTION 4: Shared Ingredients -->
   <section id="shared" class="scroll-section">
     <div class="sticky-container">
       <h2>What Connects Us</h2>
@@ -58,7 +62,6 @@
     </div>
   </section>
 
-  <!-- SECTION 5: Outro -->
   <section id="outro">
     <h2>Food is a universal language</h2>
     <p>Across 20 cuisines and thousands of recipes, the same ingredients appear again and again — connecting cultures across the globe.</p>

@@ -1,5 +1,20 @@
 console.log('main.js loaded');
 
+const UNSPLASH_KEY = '-oJeiHbvuyhxqYC0KJm-ozCsnskQLyahqb36KR-GOOw';
+
+function fetchCuisineImage(cuisine) {
+  const query = cuisine.replace('_', ' ') + ' food dish';
+  fetch(`https://api.unsplash.com/photos/random?query=${query}&client_id=${UNSPLASH_KEY}`)
+    .then(res => res.json())
+    .then(data => {
+      const img = document.getElementById('cuisine-image');
+      img.src = data.urls.regular;
+      img.alt = cuisine;
+      img.style.display = 'block';
+    })
+    .catch(err => console.log('Image fetch failed:', err));
+}
+
 Promise.all([
   d3.json('data/processed/cuisine_counts.json'),
   d3.json('data/processed/top_ingredients.json'),
@@ -84,6 +99,7 @@ Promise.all([
     .on('click', function(event, d) {
       d3.selectAll('.cuisine-btn').classed('active', false);
       d3.select(this).classed('active', true);
+      fetchCuisineImage(d);
       updateIngredientChart(d);
     });
 
@@ -137,6 +153,7 @@ Promise.all([
   }
 
   updateIngredientChart('italian');
+  fetchCuisineImage('italian');
   d3.selectAll('.cuisine-btn').filter(d => d === 'italian').classed('active', true);
 
   // =====================
