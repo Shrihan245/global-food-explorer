@@ -1,8 +1,10 @@
-# global-food-explorer
+# 🌎 Global Food Explorer
 
 A scroll-driven, interactive data story built with D3.js — exploring global cuisines, signature ingredients, and the surprising connections between food cultures worldwide.
 
 **Live demo:** [https://shrihan245.github.io/global-food-explorer/](https://shrihan245.github.io/global-food-explorer/)
+
+![App Preview](global-food-preview.png)
 
 ## What It Does
 
