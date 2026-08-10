@@ -103,7 +103,6 @@ Open `http://localhost:8000` in your browser.
 
 ## Roadmap
 
-- Fix hover tooltips on bar charts
 - Add world map showing cuisine origins
 - Ingredient overlap network diagram (force-directed graph)
 - Mobile responsive layout
