@@ -137,6 +137,82 @@
   .shared-bar:hover {
     fill: #21867a;
   }
+
+  /* PHOTO GALLERY */
+  #cuisine-photo-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .photo-cuisine-btn {
+    padding: 8px 16px;
+    border: 1px solid #f4a261;
+    border-radius: 20px;
+    background: transparent;
+    color: #f4a261;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+  }
+
+  .photo-cuisine-btn:hover,
+  .photo-cuisine-btn.active {
+    background: #f4a261;
+    color: #0f0f0f;
+  }
+
+  #photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 1.5rem;
+  }
+
+  .gallery-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.25s;
+  }
+
+  .gallery-photo:hover {
+    transform: scale(1.05);
+  }
+
+  /* LIGHTBOX */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox.active {
+    display: flex;
+  }
+
+  #lightbox-img {
+    max-width: 85vw;
+    max-height: 85vh;
+    border-radius: 8px;
+  }
+
+  #lightbox-close {
+    position: absolute;
+    top: 24px;
+    right: 36px;
+    font-size: 2.2rem;
+    color: #f5f5f5;
+    cursor: pointer;
+  }
   
   /* OUTRO */
   #outro {

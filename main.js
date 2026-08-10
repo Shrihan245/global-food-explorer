@@ -1,10 +1,11 @@
 console.log('main.js loaded');
 
 Promise.all([
-  d3.json('/global-food-explorer/data/processed/cuisine_counts.json'),
-  d3.json('/global-food-explorer/data/processed/top_ingredients.json'),
-  d3.json('/global-food-explorer/data/processed/shared_ingredients.json')
-]).then(([cuisineCounts, topIngredients, sharedIngredients]) => {
+  d3.json('data/processed/cuisine_counts.json'),
+  d3.json('data/processed/top_ingredients.json'),
+  d3.json('data/processed/shared_ingredients.json'),
+  d3.json('data/processed/gallery_photos.json')
+]).then(([cuisineCounts, topIngredients, sharedIngredients, galleryPhotos]) => {
 
   // TOOLTIP
   const tooltip = document.getElementById('tooltip');
@@ -138,6 +139,53 @@ Promise.all([
 
   updateIngredientChart('italian');
   d3.selectAll('.cuisine-btn').filter(d => d === 'italian').classed('active', true);
+
+  // =====================
+  // SECTION: PHOTO GALLERY
+  // =====================
+  const photosByCuisine = d3.group(galleryPhotos, d => d.cuisine);
+  const photoCuisines = Array.from(photosByCuisine.keys());
+
+  d3.select('#cuisine-photo-selector')
+    .selectAll('.photo-cuisine-btn')
+    .data(photoCuisines)
+    .enter()
+    .append('button')
+    .attr('class', 'photo-cuisine-btn')
+    .text(d => d)
+    .on('click', function(event, d) {
+      d3.selectAll('.photo-cuisine-btn').classed('active', false);
+      d3.select(this).classed('active', true);
+      renderPhotoGrid(d);
+    });
+
+  function renderPhotoGrid(cuisine) {
+    const photos = photosByCuisine.get(cuisine) || [];
+
+    d3.select('#photo-grid')
+      .selectAll('img')
+      .data(photos, d => d.path)
+      .join('img')
+      .attr('class', 'gallery-photo')
+      .attr('src', d => d.path)
+      .attr('loading', 'lazy')
+      .on('click', function(event, d) {
+        document.getElementById('lightbox-img').src = d.path;
+        document.getElementById('lightbox').classList.add('active');
+      });
+  }
+
+  renderPhotoGrid(photoCuisines[0]);
+  d3.select('.photo-cuisine-btn').classed('active', true);
+
+  document.getElementById('lightbox-close').addEventListener('click', () => {
+    document.getElementById('lightbox').classList.remove('active');
+  });
+  document.getElementById('lightbox').addEventListener('click', (e) => {
+    if (e.target.id === 'lightbox') {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+  });
 
   // =====================
   // SECTION 3: SHARED INGREDIENTS

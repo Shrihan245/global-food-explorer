@@ -1,0 +1,194 @@
+[
+  {
+    "cuisine": "American",
+    "path": "data/raw/Dishes/American/American_539.jpg"
+  },
+  {
+    "cuisine": "American",
+    "path": "data/raw/Dishes/American/American_784.jpg"
+  },
+  {
+    "cuisine": "American",
+    "path": "data/raw/Dishes/American/American_89.jpg"
+  },
+  {
+    "cuisine": "American",
+    "path": "data/raw/Dishes/American/American_1340.jpg"
+  },
+  {
+    "cuisine": "American",
+    "path": "data/raw/Dishes/American/American_1263.jpg"
+  },
+  {
+    "cuisine": "American",
+    "path": "data/raw/Dishes/American/American_1328.jpg"
+  },
+  {
+    "cuisine": "American",
+    "path": "data/raw/Dishes/American/American_722.jpg"
+  },
+  {
+    "cuisine": "American",
+    "path": "data/raw/Dishes/American/American_1416.jpg"
+  },
+  {
+    "cuisine": "Chinese",
+    "path": "data/raw/Dishes/Chinese/Chinese_2318.jpg"
+  },
+  {
+    "cuisine": "Chinese",
+    "path": "data/raw/Dishes/Chinese/Chinese_1430.jpg"
+  },
+  {
+    "cuisine": "Chinese",
+    "path": "data/raw/Dishes/Chinese/Chinese_533.jpg"
+  },
+  {
+    "cuisine": "Chinese",
+    "path": "data/raw/Dishes/Chinese/Chinese_802.jpg"
+  },
+  {
+    "cuisine": "Chinese",
+    "path": "data/raw/Dishes/Chinese/Chinese_2698.jpg"
+  },
+  {
+    "cuisine": "Chinese",
+    "path": "data/raw/Dishes/Chinese/Chinese_1370.jpg"
+  },
+  {
+    "cuisine": "Chinese",
+    "path": "data/raw/Dishes/Chinese/Chinese_2397.jpg"
+  },
+  {
+    "cuisine": "Chinese",
+    "path": "data/raw/Dishes/Chinese/Chinese_2062.jpg"
+  },
+  {
+    "cuisine": "European",
+    "path": "data/raw/Dishes/European/European_233.jpg"
+  },
+  {
+    "cuisine": "European",
+    "path": "data/raw/Dishes/European/European_556.jpg"
+  },
+  {
+    "cuisine": "European",
+    "path": "data/raw/Dishes/European/European_1642.jpg"
+  },
+  {
+    "cuisine": "European",
+    "path": "data/raw/Dishes/European/European_1657.jpg"
+  },
+  {
+    "cuisine": "European",
+    "path": "data/raw/Dishes/European/European_877.jpg"
+  },
+  {
+    "cuisine": "European",
+    "path": "data/raw/Dishes/European/European_273.jpg"
+  },
+  {
+    "cuisine": "European",
+    "path": "data/raw/Dishes/European/European_1135.jpg"
+  },
+  {
+    "cuisine": "European",
+    "path": "data/raw/Dishes/European/European_1214.jpg"
+  },
+  {
+    "cuisine": "Indian",
+    "path": "data/raw/Dishes/Indian/Indian_1191.jpg"
+  },
+  {
+    "cuisine": "Indian",
+    "path": "data/raw/Dishes/Indian/Indian_542.jpg"
+  },
+  {
+    "cuisine": "Indian",
+    "path": "data/raw/Dishes/Indian/Indian_245.jpg"
+  },
+  {
+    "cuisine": "Indian",
+    "path": "data/raw/Dishes/Indian/Indian_2502.jpg"
+  },
+  {
+    "cuisine": "Indian",
+    "path": "data/raw/Dishes/Indian/Indian_2036.jpg"
+  },
+  {
+    "cuisine": "Indian",
+    "path": "data/raw/Dishes/Indian/Indian_1473.jpg"
+  },
+  {
+    "cuisine": "Indian",
+    "path": "data/raw/Dishes/Indian/Indian_729.jpg"
+  },
+  {
+    "cuisine": "Indian",
+    "path": "data/raw/Dishes/Indian/Indian_1536.jpg"
+  },
+  {
+    "cuisine": "Japanese",
+    "path": "data/raw/Dishes/Japanese/Japanese_2007.jpg"
+  },
+  {
+    "cuisine": "Japanese",
+    "path": "data/raw/Dishes/Japanese/Japanese_1362.jpg"
+  },
+  {
+    "cuisine": "Japanese",
+    "path": "data/raw/Dishes/Japanese/Japanese_1926.jpg"
+  },
+  {
+    "cuisine": "Japanese",
+    "path": "data/raw/Dishes/Japanese/Japanese_1707.jpg"
+  },
+  {
+    "cuisine": "Japanese",
+    "path": "data/raw/Dishes/Japanese/Japanese_448.jpg"
+  },
+  {
+    "cuisine": "Japanese",
+    "path": "data/raw/Dishes/Japanese/Japanese_894.jpg"
+  },
+  {
+    "cuisine": "Japanese",
+    "path": "data/raw/Dishes/Japanese/Japanese_1846.jpg"
+  },
+  {
+    "cuisine": "Japanese",
+    "path": "data/raw/Dishes/Japanese/Japanese_611.jpg"
+  },
+  {
+    "cuisine": "Korean",
+    "path": "data/raw/Dishes/Korean/Korean_808.jpg"
+  },
+  {
+    "cuisine": "Korean",
+    "path": "data/raw/Dishes/Korean/Korean_2393.jpg"
+  },
+  {
+    "cuisine": "Korean",
+    "path": "data/raw/Dishes/Korean/Korean_2065.jpg"
+  },
+  {
+    "cuisine": "Korean",
+    "path": "data/raw/Dishes/Korean/Korean_1503.jpg"
+  },
+  {
+    "cuisine": "Korean",
+    "path": "data/raw/Dishes/Korean/Korean_319.jpg"
+  },
+  {
+    "cuisine": "Korean",
+    "path": "data/raw/Dishes/Korean/Korean_2602.jpg"
+  },
+  {
+    "cuisine": "Korean",
+    "path": "data/raw/Dishes/Korean/Korean_2868.jpg"
+  },
+  {
+    "cuisine": "Korean",
+    "path": "data/raw/Dishes/Korean/Korean_1166.jpg"
+  }
+]
